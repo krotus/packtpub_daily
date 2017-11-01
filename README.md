@@ -1,3 +1,7 @@
+Issues
+=======
+Today guys at PacktPub introduced reCAPTCHA to prevent automatic scripts to claim free deals every day. With this fix this PHP script no longer works unless someone cracks the captcha...
+
 Packtpub Free Daily Book
 =================================
 
@@ -14,4 +18,4 @@ php main.php
 The following example shows how to claim your eBook every day at 6am:
 
 ```
-0 6 * * * /usr/bin/php /path/to/files/packtpub-downloader.php >/dev/null 2>&1
+0 6 * * * /usr/bin/php /path/to/files/main.php >/dev/null 2>&1

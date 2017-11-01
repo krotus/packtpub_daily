@@ -60,7 +60,7 @@ class Packtpub
                 // TODO: Send a notification by email to user account
                 echo 'Congrats! You have the new Book' . PHP_EOL;
             } else {
-                throw new \Exception('Can not posible to claim the freebok, sorry.');
+                throw new \Exception('Can not posible to claim the freebook, sorry.');
             }
         } else {
             throw new \Exception('Can not posible to loggin on the system, check out please.');
@@ -83,7 +83,7 @@ class Packtpub
                 $url = $html->find('div[class=free-ebook] form', 0)->attr['action'];
                 $freeBook = new FreeBook($title, $image, $formId, $url);
             } catch (\Exception $e) {
-                echo 'Can fill the daily FreeBook for one reasons: the method to show the new book and its tags has changed';
+                echo 'Can not fill the daily FreeBook for one reasons: the method to show the new book and its tags has changed';
             }
 
         }
